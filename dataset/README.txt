@@ -1,0 +1,2 @@
+The full-sized dataset may be downloaded from https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data.
+Names of the dataset file to be used must be changed accordingly in DataHandler.js, js_server/server.js and server/server.py. 

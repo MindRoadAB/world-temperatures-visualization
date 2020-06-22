@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://d3js.org/d3-queue.v3.min.js"></script>
+	<script src="https://d3js.org/topojson.v1.min.js"></script>
+
+
+	<link rel="stylesheet" href="style.css">
+
+	<title>Pia's data visualization</title>
+</head>
+
+<body>
+	<div>
+		<div id="map"></div>
+		<div id="timeslider"></div>
+	</div>
+
+	<div>
+		<div id="linechart-settings">
+			<h2>Linechart for <span id="linechart-title"></span></h2>
+			<div id="country-settings">
+				<div>
+					<input type="radio" id="show-country" name="show-country-selection" value="show-country" />
+					<label for="show-country">Show line for country</label>
+					<input type="radio" id="show-cities" name="show-country-selection" value="show-cities" checked="checked" />
+					<label for="show-cities">Show line for cities</label>
+					<input type="radio" id="show-deviation" name="show-country-selection" value="show-deviation" />
+					<label for="show-deviation">Show city deviation from country average</label>
+					<input type="radio" id="show-yearly-curve" name="show-country-selection" value="show-yearly-curve" />
+					<label for="show-yearly-curve">Show yearly curve</label>
+				</div>
+			</div>
+			<div id="city-settings">
+				<div>
+					<input type="radio" id="show-city" name="show-city-selection" value="show-city" checked="checked" />
+					<label for="show-city">Show line for city</label>
+					<input type="radio" id="show-city-and-country" name="show-city-selection" value="show-city-and-country"/>
+					<label for="show-city-and-country">Show line for city and country</label>
+					<input type="radio" id="show-city-deviation" name="show-city-selection" value="show-city-deviation" />
+					<label for="show-city-deviation">Show city deviation from country average</label>
+					<input type="radio" id="show-city-yearly-curve" name="show-city-selection" value="show-city-yearly-curve" />
+					<label for="show-city-yearly-curve">Show yearly curve</label>
+				</div>
+			</div>
+		</div>
+		<div id="linechart"></div>
+	</div>
+	
+	<script src="jquery-3.5.0.min.js"></script>
+	<script src="index.js" type="module"></script>
+</body>
+
+</html>
